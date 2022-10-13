@@ -1,14 +1,17 @@
-import Header from "../../components/Header/Header";
 import "./Home.css";
+import CurrentWeather from "../../components/CurrentWeather/CurrentWeather";
+import Loader from "../../components/Loader/Loader";
 
-function Home() {
+function Home({ weatherData, locationData, loading }) {
   return (
     <div className="Home">
-      <Header />
       <div className="main">
-        <p>Welcome to the weather app !</p>
-        <p>Please search a place for weather</p>
+        <Loader loading={loading} />
+        <p>Welcome to the soWeather!</p>
+        <p>Search for your location to get your weather</p>
+        <p>Current location weather</p>
       </div>
+      <CurrentWeather weatherData={weatherData} locationData={locationData} />
     </div>
   );
 }

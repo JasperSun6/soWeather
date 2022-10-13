@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+
+.hourlyCards{
+    display:flex;
+    flex-direction: row;
+}
+
+
+.hourlyCard{
+    padding:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    list-style: none;
+    background-color:#1175ac;
+    max-width: 25rem; 
+    margin: 0 auto; 
+    padding: 1rem;
+    color: #fff;
+}
+
+.dateTime{
+    text-align: center;
+}
+
+.date{
+    font-size:2rem;
+}
+
+.time{
+    font-size:1.5rem;
+}
+
+.feelTemp{
+    font-size:1.15rem;
+    text-align:center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .hourlyCards{
+        flex-direction: column;
+    }
+  }
