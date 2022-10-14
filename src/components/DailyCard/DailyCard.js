@@ -43,7 +43,7 @@ function DailyCard({ weatherData, locationData }) {
                   <div className="weatherDes">
                     <img
                       className="weatherIcon"
-                      src={`http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`}
+                      src={`https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`}
                       alt="icon"
                     />
                     <p className="tempDes">

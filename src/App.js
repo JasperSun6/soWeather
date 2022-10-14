@@ -33,6 +33,7 @@ function App() {
         position.coords.longitude
       );
       setWeatherData(forecastData.WeatherData);
+      console.log(forecastData.WeatherData);
       setLocationData(
         `${forecastData.data.address.house_number} ${forecastData.data.address.road}, ${forecastData.data.address.city}, ${forecastData.data.address.country}`
       );

@@ -37,7 +37,7 @@ function HourlyCard({ weatherData, locationData }) {
                   <div className="weatherDes">
                     <img
                       className="weatherIcon"
-                      src={`http://openweathermap.org/img/wn/${hour.weather[0].icon}@2x.png`}
+                      src={`https://openweathermap.org/img/wn/${hour.weather[0].icon}@2x.png`}
                       alt="icon"
                     />
                     <p className="tempDes">
